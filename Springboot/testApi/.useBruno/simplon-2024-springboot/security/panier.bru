@@ -1,0 +1,19 @@
+meta {
+  name: panier
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/panier
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  article_id: 
+  price_id: 
+  facture_id: 
+  date_time: 
+  quantity: 
+}

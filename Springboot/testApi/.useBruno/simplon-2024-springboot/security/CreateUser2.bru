@@ -1,0 +1,27 @@
+meta {
+  name: CreateUser2
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/users
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {
+    "username": "fifi" 
+  }
+}
+
+body:form-urlencoded {
+  username: shiipou
+}
+
+body:multipart-form {
+  user_id: 
+  facture_id: 
+  panier_id: 
+}
